@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear My Skin</title>
+</head>
+<body style="background-color: rgb(222, 245, 237);">
+  <nav id="logo-bar" class="navbar">
+    <div  class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img alt="Logo" src="../public/Logo.png" id="logo-image" width="30" height="24" class="d-inline-block align-text-top">
+        Dear My Skin
+      </a>
+    </div>    
+  </nav>
+  <div id="thumbnail" class="container d-flex flex-column justify-content-center align-items-center mt-5">
+    <h1 id="head-thumbnail">Dear My Skin</h1>
+    <p class="text-center" > 
+      An Application that can indicate and do some classification to some skin disease with image scanned.</p>
+  </div>
+  
+  <div id="input-data" class="container-lg d-flex flex-column align-items-center justify-content-center" style="height: 250px">
+    <h3>Input Gambar yang mau dideteksi disini</h3>
+    <div class="input-group" style="width: 400px;">
+      <input type="file" accept="image/*" class="form-control" id="image-chose" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+    </div>
+  </div> 
+
+  <div id="image-content" class="container d-md-flex flex-row align-items-center justify-content-center">
+    <div id="uploaded-image-content" class="d-flex flex-column align-items-center me-5 mb-3">
+      <h5>Uploaded image</h5>
+      <div id="img-preview" class="preview-img"></div>
+    </div>
+    <div id="detection-image-content" class="d-flex flex-column align-items-center">
+      <h5>Image Skin Detection</h5>
+      <div id="img-detecting-result" class="preview-img d-flex align-items-center justify-content-center">
+        <div id="loading" class="spinner-border text-primary" role="status" style="display: none;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+</html>

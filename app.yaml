@@ -1,0 +1,17 @@
+runtime: nodejs
+service: frontend
+
+handlers: 
+  - URL: /
+    static_file: 
+# env: flex
+# runtime_config:
+#  operating_system: ubuntu22
+#  runtime_version: "18.12.1"
+# manual_scaling:
+#  instances: 1
+# resources:
+#  cpu: 4
+ # memory_gb: 16
+#  disk_size_gb: 30
+
