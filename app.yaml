@@ -1,9 +1,15 @@
 runtime: nodejs
 service: frontend
 
-handlers: 
-  - URL: /
-    static_file: 
+handlers:
+# Serve all static files with url ending with a file extension
+  - url: /(.*\..+)$
+    static_files: dist/\1
+    upload: dist/(.*\..+)$
+  # Catch all handler to index.html
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
 # env: flex
 # runtime_config:
 #  operating_system: ubuntu22
