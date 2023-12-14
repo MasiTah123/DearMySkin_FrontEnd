@@ -1,5 +1,4 @@
 
-
 const main = () => {
   const choosenImage = document.getElementById('image-chose');
   const imgPreview = document.getElementById('img-preview');
